@@ -1,4 +1,4 @@
-<form>
+
   <fieldset>
     <legend>Personal information:</legend>
     First name:<br>
@@ -10,6 +10,20 @@
     published date:<br>
     <input  type="date" name="publisheddate" placeholder="mm/dd/yyyy" [(ngModel)]= "publisheddate">
     <br><br>
-    <button (click)="myClickFunction($event)" >click</button>
+    <button (click)="myClickFunction($event)" >click</button><br> <br><label>{{created}}</label><br><hr>
+  
+ <br>
+  <button (click)="showAllBooks()" >Show All Books</button><br>
+  <table  *ngIf="show">
+      <tr>
+        <th>
+          name
+        </th><th>author</th><th>published</th>
+      </tr>
+      <tr *ngFor="let book of books">
+        <td>{{book.name}}</td>
+        <td>{{book.author}}</td>
+        <td>{{book.publisheddate}}</td>
+      </tr>
+  </table>
   </fieldset>
-</form>
