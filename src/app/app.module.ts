@@ -1,24 +1,36 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MainComponent } from './main/main.component';
 import { NavComponent } from './main/nav/nav.component';
 import { LeftnavComponent } from './main/leftnav/leftnav.component';
+import { FormComponent } from './main/form/form.component';
+import { Services } from './services/app.services';
+
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
     MainComponent,
     NavComponent,
-    LeftnavComponent
+    LeftnavComponent,
+    FormComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [
+    Services
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

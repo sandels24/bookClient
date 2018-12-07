@@ -1,0 +1,15 @@
+<form>
+  <fieldset>
+    <legend>Personal information:</legend>
+    First name:<br>
+    <input type="text" name="bookname" placeholder="bookname" [(ngModel)]= "bookname">
+    <br>
+    Last name:<br>
+    <input  type="text" name="authorname" placeholder="author" [(ngModel)]= "authorname">
+    <br>
+    published date:<br>
+    <input  type="date" name="publisheddate" placeholder="mm/dd/yyyy" [(ngModel)]= "publisheddate">
+    <br><br>
+    <button (click)="myClickFunction($event)" >click</button>
+  </fieldset>
+</form>
