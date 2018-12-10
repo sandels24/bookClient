@@ -10,6 +10,7 @@ import { NavComponent } from './main/nav/nav.component';
 import { LeftnavComponent } from './main/leftnav/leftnav.component';
 import { FormComponent } from './main/form/form.component';
 import { Services } from './services/app.services';
+import { WeatherComponent } from './main/leftnav/weather/weather.component';
 
 
 
@@ -20,7 +21,8 @@ import { Services } from './services/app.services';
     MainComponent,
     NavComponent,
     LeftnavComponent,
-    FormComponent
+    FormComponent,
+    WeatherComponent
   ],
   imports: [
     BrowserModule,

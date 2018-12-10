@@ -32,7 +32,7 @@ export class FormComponent implements OnInit {
 
  showAllBooks(){
 
-  this.service.getbooks().subscribe(data => { 
+  this.service.getbooks().subscribe(data => {
     this.books = [];
     data.forEach(element => {
       this.books.push(element);

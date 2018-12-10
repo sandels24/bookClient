@@ -1,0 +1,26 @@
+div.bg{
+    width: 290px;
+    height: 300px;
+    border: 2px;
+    border-radius: 10x;
+    margin: 4px;
+    float: left;
+    background-image: url("weather.png");
+    background-size: 290px 300px;
+    background-repeat: no-repeat;
+}
+.temperature{
+    color: white;
+    padding: 8px;
+    font-family: Arial;
+    text-align: center;
+    font-size: 40px;
+    margin-top: 40px;
+}
+.skycover{
+    color: white;
+    padding: 8px;
+    font-family: Arial;
+    text-align: center;
+    font-size: 20px;
+}
